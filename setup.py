@@ -54,7 +54,7 @@ _deps = [
     "isort",
     "langdetect",  # Needed for LightEval's extended tasks
     "latex2sympy2_extended",
-    "liger-kernel",
+    "liger_kernel",
     "lighteval @ git+https://github.com/huggingface/lighteval.git@ed084813e0bd12d82a06d9f913291fdbee774905",
     "math-verify",  # Used for math verification in grpo
     "packaging",
@@ -105,7 +105,7 @@ install_requires = [
     deps["langdetect"],
     deps["latex2sympy2_extended"],
     deps["math-verify"],
-    deps["liger-kernel"],
+    deps["liger_kernel"],
     deps["packaging"],  # utilities from PyPA to e.g., compare versions
     deps["safetensors"],
     deps["sentencepiece"],
