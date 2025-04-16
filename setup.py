@@ -41,35 +41,35 @@ if stale_egg_info.exists():
 # IMPORTANT: all dependencies should be listed here with their version requirements, if any.
 #   * If a dependency is fast-moving (e.g. trl), pin to the exact version
 _deps = [
-    "accelerate==1.4.0",
-    "bitsandbytes>=0.43.0",
-    "datasets>=3.2.0",
-    "deepspeed==0.15.4",
-    "distilabel[vllm,ray,openai]>=1.5.2",
-    "e2b-code-interpreter>=1.0.5",
-    "einops>=0.8.0",
-    "flake8>=6.0.0",
-    "hf_transfer>=0.1.4",
-    "huggingface-hub[cli,hf_xet]>=0.19.2,<1.0",
-    "isort>=5.12.0",
+    "accelerate",
+    "bitsandbytes",
+    "datasets",
+    "deepspeed",
+    "distilabel[vllm,ray,openai]",
+    "e2b-code-interpreter",
+    "einops",
+    "flake8",
+    "hf_transfer",
+    "huggingface-hub[cli]",
+    "isort",
     "langdetect",  # Needed for LightEval's extended tasks
-    "latex2sympy2_extended>=1.0.6",
-    "liger-kernel>=0.5.6",
-    "lighteval @ git+https://github.com/huggingface/lighteval.git@bb14995c4eccab5cabd450b1e509c3c898a16921",  # pass@1 for AIME with n=32 samples per prompt
-    "math-verify==0.5.2",  # Used for math verification in grpo
-    "packaging>=23.0",
-    "parameterized>=0.9.0",
-    "peft>=0.14.0",
+    "latex2sympy2_extended",
+    "liger_kernel",
+    "lighteval @ git+https://github.com/huggingface/lighteval.git@ed084813e0bd12d82a06d9f913291fdbee774905",
+    "math-verify",  # Used for math verification in grpo
+    "packaging",
+    "parameterized",
+    "peft",
     "pytest",
-    "python-dotenv",
-    "ruff>=0.9.0",
-    "safetensors>=0.3.3",
-    "sentencepiece>=0.1.99",
-    "torch==2.6.0",
-    "transformers==4.51.2",
-    "trl @ git+https://github.com/huggingface/trl.git@d625c5533a6b1c84d3565c8080857f6bb81c538a",  # Bump for vLLM and 2x faster throughput: https://github.com/huggingface/trl/pull/3276
-    "vllm==0.8.3",
-    "wandb>=0.19.1",
+    "python-dotenv", 
+    "ruff",
+    "safetensors",
+    "sentencepiece",
+    "torch",
+    "transformers",
+    "trl",
+    "vllm",
+    "wandb",
 ]
 
 # this is a lookup table with items like:
